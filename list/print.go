@@ -1,6 +1,10 @@
 package list
 
-import "fmt"
+import (
+	"fmt"
+
+	"github.com/holizz/terrapin"
+)
 
 func (first *Node) Print() {
 	for first != nil {
@@ -11,4 +15,5 @@ func (first *Node) Print() {
 		first = first.Next
 	}
 	fmt.Println()
+	t := terrapin.NewTerrapin(i, terrapin.Position{150.0, 150.0})
 }
